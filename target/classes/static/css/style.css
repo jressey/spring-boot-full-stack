@@ -1,0 +1,25 @@
+body {
+	margin-top: 40px;
+}
+
+.form-container {
+	width: 80%;
+	margin: 0px auto;
+}
+
+.col-form-label {
+	text-align: right;
+}
+
+.display-table {
+	margin-bottom: 20px;
+}
+
+.display-table tbody > tr > td {
+	font-size: 2em;
+}
+
+.display-table tbody > tr > td > span {
+	margin-left: 15px;
+}
+

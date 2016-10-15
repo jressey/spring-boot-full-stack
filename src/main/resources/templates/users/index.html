@@ -4,9 +4,12 @@
     <title>User Manager</title>
     <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
           rel="stylesheet" media="screen" />
+    <link th:href="@{/css/style.css}" 
+          rel="stylesheet" type="text/css" media="all"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+  <div class="container">
     <table class="table table-striped">
       <tr>
         <th>First Name</th>
@@ -24,6 +27,7 @@
         </td>
       </tr>
     </table>
-    <a href="/users/new">Create a user</a>
+    <a href="/users/new" class="btn btn-lg btn-primary pull-right">Create a user</a>
+    </div>
 </body>
 </html>

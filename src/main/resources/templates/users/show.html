@@ -4,15 +4,29 @@
     <title>Showing User</title>
     <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
           rel="stylesheet" media="screen" />
+    <link th:href="@{/css/style.css}" 
+          rel="stylesheet" type="text/css" media="all"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-	<h1>Result</h1>
-    <p th:text="'First Name: ' + ${user.firstName}" />
-    <p th:text="'Last Name: ' + ${user.lastName}" />
-    <p th:text="'Age: ' + ${user.age}" />
-    <a href="/users/new">Create another user</a>
-    <a th:href="${'/users/' + user.id}">Edit this user</a>
-    <a href="/users">See all users</a>
+    <div class="container">
+    <table class="display-table">
+    <tr>
+        <td>First Name:</td>
+        <td><span th:text="${user.firstName}" /></td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td><span th:text="${user.lastName}" /></td>
+    </tr>
+    <tr>
+        <td>Age:</td>
+        <td><span th:text="${user.age}" /></td>
+    </tr>
+    </table>
+    <a href="/users/new" class="btn btn-sm btn-primary">Create another user</a>
+    <a th:href="${'/users/' + user.id}" class="btn btn-sm btn-primary">Edit this user</a>
+    <a href="/users" class="btn btn-sm btn-primary">See all users</a>
+    </div>
 </body>
 </html>
