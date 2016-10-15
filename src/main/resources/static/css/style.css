@@ -23,7 +23,15 @@ body {
 	margin-left: 15px;
 }
 
+.error-message, .welcome-message {
+	font-size: 2em;
+}
+
 .error-message {
 	color: red;
 	font-size: 2em;
+}
+
+.welcome-message {
+	color: blue;
 }
