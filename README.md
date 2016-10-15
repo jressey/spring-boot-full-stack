@@ -2,6 +2,10 @@
 
 Very simple example of a full-stack Spring Boot App with all the boilerplate pieces combined.
 
-Run with `./mvnw spring-boot:run`
+### Instructions:
+1. Clone this repo
+2. `cd spring-boot-full-stack`
+3. Run with `./mvnw spring-boot:run`
+4. Visit `http://localhost:8080` in browser
 
-Visit `http://localhost:8080`
+
